@@ -6,14 +6,24 @@
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
     <title>E-library</title>
+    <style>
+      body {
+        background-image: #E4E9F7;
+      }
+    </style>
 </head>
 <body>
     <section>
         <header>
-            <div class="header-of-library"><H1>E-Library</H1></div>
+            <div class="header-of-library"><H1>E-Library&nbsp;<i class='bx bxs-book'></i></H1> 
+            <ul>
+             <li> <i class='bx bx-search-alt'></i><input type="text" value="Search book" name="search-book" id="search-book"></li>
+             <li><a href="#">Request a book</a></li>
+            </ul>
+          </div>
         </header>
         <div class="container-library">
-            <div class="  container-of-sections ">this is btech
+            <div class="  container-of-sections "><h2>B-TECH BOOK SECTION</h2>
                 <div class="container-of-books">
                     <div class="inds">
     <div class="container-my">
@@ -26,8 +36,8 @@
         <label for="s1" id="slide1">
           <div class="card-my">
             <div class="infos">
-              <span class="name">Clear Your Doubts</span>
-              <span class="lorem">With the help of doubts section ,don't leave any doubt uncleared.
+              <span class="name">Maths</span>
+              <span class="lorem"><a href="#">View books</a>
               </span>
             </div>
           </div>
@@ -35,35 +45,32 @@
         <label for="s2" id="slide2">
           <div class="card-my">
             <div class="infos">
-              <span class="name">Contact With seniors</span>
-              <span class="lorem">Take a step towards betterment of your college journey with guidance of your
-                seniors</span>
+              <span class="name">Programming languages</span>
+              <span class="lorem"><a href="#">View books</a></span>
             </div>
           </div>
         </label>
         <label for="s3" id="slide3">
           <div class="card-my">
             <div class="infos">
-              <span class="name">Activities</span>
-              <span class="lorem">Get notified about the co-curricular activities organised by your institute</span>
+              <span class="name">Data Structure</span>
+              <span class="lorem"><a href="#">View books</a></span>
             </div>
           </div>
         </label>
         <label for="s4" id="slide4">
           <div class="card-my">
             <div class="infos">
-              <span class="name" id="pew">Curriculum</span>
-              <span class="lorem">Don't miss any lecture or event ,use a special calender based on your college
-                curriculum</span>
+              <span class="name" id="pew">English</span>
+              <span class="lorem"><a href="#">View books</a></span>
             </div>
           </div>
         </label>
         <label for="s5" id="slide5">
           <div class="card-my">
             <div class="infos">
-              <span class="name" id="cold">Lecture Highlight</span>
-              <span class="lorem">Missed a lecture unfortunately ? don't worry Check Highlights of lectures uploaded
-                through your teachers themselves</span>
+              <span class="name" id="cold">BOOKS FOR B-TECH STUDENTS</span>
+              <span class="lorem" id="books-intro">Click to view subjects</span>
             </div>
           </div>
         </label>
@@ -72,7 +79,7 @@
   </div>
                 </div>
             </div>
-            <div class="  container-of-sections">this is mba
+            <div class="  container-of-sections"><h2>M-TECH BOOK SECTION</h2>
                 <div class="container-of-books">
                     <div class="inds">
     <div class="container-my">
@@ -86,7 +93,7 @@
           <div class="card-my">
             <div class="infos">
               <span class="name">Clear Your Doubts</span>
-              <span class="lorem">With the help of doubts section ,don't leave any doubt uncleared.
+              <span class="lorem"><a href="#">View books</a>
               </span>
             </div>
           </div>
@@ -95,8 +102,8 @@
           <div class="card-my">
             <div class="infos">
               <span class="name">Contact With seniors</span>
-              <span class="lorem">Take a step towards betterment of your college journey with guidance of your
-                seniors</span>
+              <span class="lorem"><a href="#">View books</a>
+              </span>
             </div>
           </div>
         </label>
@@ -104,7 +111,7 @@
           <div class="card-my">
             <div class="infos">
               <span class="name">Activities</span>
-              <span class="lorem">Get notified about the co-curricular activities organised by your institute</span>
+              <span class="lorem"><a href="#">View books</a></span>
             </div>
           </div>
         </label>
@@ -112,17 +119,15 @@
           <div class="card-my">
             <div class="infos">
               <span class="name" id="pew">Curriculum</span>
-              <span class="lorem">Don't miss any lecture or event ,use a special calender based on your college
-                curriculum</span>
+              <span class="lorem"><a href="#">View books</a></span>
             </div>
           </div>
         </label>
         <label for="s52" id="slide52">
           <div class="card-my">
             <div class="infos">
-              <span class="name" id="cold">Lecture Highlight</span>
-              <span class="lorem">Missed a lecture unfortunately ? don't worry Check Highlights of lectures uploaded
-                through your teachers themselves</span>
+              <span class="name" id="cold"> BOOKS FOR M-TECH STUDENTS</span>
+              <span class="lorem" id="books-intro">Click to view subjects</span>
             </div>
           </div>
         </label>
@@ -131,7 +136,7 @@
   </div>
                 </div>
             </div>
-            <div class="  container-of-sections">this is bba
+            <div class="  container-of-sections"><h2>B.B.A BOOK SECTION</h2>
                 <div class="container-of-books">
                     <div class="inds">
     <div class="container-my">
@@ -145,7 +150,7 @@
           <div class="card-my">
             <div class="infos">
               <span class="name">Clear Your Doubts</span>
-              <span class="lorem">With the help of doubts section ,don't leave any doubt uncleared.
+              <span class="lorem"><a href="#">View books</a>
               </span>
             </div>
           </div>
@@ -154,8 +159,8 @@
           <div class="card-my">
             <div class="infos">
               <span class="name">Contact With seniors</span>
-              <span class="lorem">Take a step towards betterment of your college journey with guidance of your
-                seniors</span>
+              <span class="lorem"><a href="#">View books</a>
+              </span>
             </div>
           </div>
         </label>
@@ -163,7 +168,7 @@
           <div class="card-my">
             <div class="infos">
               <span class="name">Activities</span>
-              <span class="lorem">Get notified about the co-curricular activities organised by your institute</span>
+              <span class="lorem"><a href="#">View books</a></span>
             </div>
           </div>
         </label>
@@ -171,17 +176,15 @@
           <div class="card-my">
             <div class="infos">
               <span class="name" id="pew">Curriculum</span>
-              <span class="lorem">Don't miss any lecture or event ,use a special calender based on your college
-                curriculum</span>
+              <span class="lorem"><a href="#">View books</a></span>
             </div>
           </div>
         </label>
         <label for="s53" id="slide53">
           <div class="card-my">
             <div class="infos">
-              <span class="name" id="cold">Lecture Highlight</span>
-              <span class="lorem">Missed a lecture unfortunately ? don't worry Check Highlights of lectures uploaded
-                through your teachers themselves</span>
+              <span class="name" id="cold">BOOKS FOR B.B.A STUDENTS</span>
+              <span class="lorem" id="books-intro">Click to view subjects</span>
             </div>
           </div>
         </label>
@@ -190,7 +193,7 @@
   </div>
                 </div>
             </div>
-            <div class="  container-of-sections">mtech
+            <div class="  container-of-sections"><h2>M.B.A BOOK SECTION</h2>
                 <div class="container-of-books">
                     <div class="inds">
     <div class="container-my">
@@ -204,7 +207,7 @@
           <div class="card-my">
             <div class="infos">
               <span class="name">Clear Your Doubts</span>
-              <span class="lorem">With the help of doubts section ,don't leave any doubt uncleared.
+              <span class="lorem"><a href="#">View books</a>
               </span>
             </div>
           </div>
@@ -213,8 +216,8 @@
           <div class="card-my">
             <div class="infos">
               <span class="name">Contact With seniors</span>
-              <span class="lorem">Take a step towards betterment of your college journey with guidance of your
-                seniors</span>
+              <span class="lorem"><a href="#">View books</a>
+              </span>
             </div>
           </div>
         </label>
@@ -222,7 +225,7 @@
           <div class="card-my">
             <div class="infos">
               <span class="name">Activities</span>
-              <span class="lorem">Get notified about the co-curricular activities organised by your institute</span>
+              <span class="lorem"><a href="#">View books</a></span>
             </div>
           </div>
         </label>
@@ -230,17 +233,15 @@
           <div class="card-my">
             <div class="infos">
               <span class="name" id="pew">Curriculum</span>
-              <span class="lorem">Don't miss any lecture or event ,use a special calender based on your college
-                curriculum</span>
+              <span class="lorem"><a href="#">View books</a></span>
             </div>
           </div>
         </label>
         <label for="s54" id="slide54">
           <div class="card-my">
             <div class="infos">
-              <span class="name" id="cold">Lecture Highlight</span>
-              <span class="lorem">Missed a lecture unfortunately ? don't worry Check Highlights of lectures uploaded
-                through your teachers themselves</span>
+              <span class="name" id="cold"> BOOKS FOR M.B.A STUDENTS</span>
+              <span class="lorem" id="books-intro">Click to view subjects</span>
             </div>
           </div>
         </label>
@@ -249,7 +250,7 @@
   </div>
                 </div>
             </div>
-            <div class="  container-of-sections">Pharmacy
+            <div class="container-of-sections"><h2>PHARMACY BOOK SECTION</h2>
                 <div class="container-of-books">
                     <div class="inds">
     <div class="container-my">
@@ -263,7 +264,7 @@
           <div class="card-my">
             <div class="infos">
               <span class="name">Clear Your Doubts</span>
-              <span class="lorem">With the help of doubts section ,don't leave any doubt uncleared.
+              <span class="lorem"><a href="#">View books</a>
               </span>
             </div>
           </div>
@@ -272,8 +273,8 @@
           <div class="card-my">
             <div class="infos">
               <span class="name">Contact With seniors</span>
-              <span class="lorem">Take a step towards betterment of your college journey with guidance of your
-                seniors</span>
+              <span class="lorem"><a href="#">View books</a>
+              </span>
             </div>
           </div>
         </label>
@@ -281,7 +282,7 @@
           <div class="card-my">
             <div class="infos">
               <span class="name">Activities</span>
-              <span class="lorem">Get notified about the co-curricular activities organised by your institute</span>
+              <span class="lorem"><a href="#">View books</a></span>
             </div>
           </div>
         </label>
@@ -289,18 +290,16 @@
           <div class="card-my">
             <div class="infos">
               <span class="name" id="pew">Curriculum</span>
-              <span class="lorem">Don't miss any lecture or event ,use a special calender based on your college
-                curriculum</span>
+              <span class="lorem"><a href="#">View books</a></span>
             </div>
           </div>
         </label>
         <label for="s56" id="slide56">
           <div class="card-my">
             <div class="infos">
-              <span class="name" id="cold">Lecture Highlight</span>
-              <span class="lorem">Missed a lecture unfortunately ? don't worry Check Highlights of lectures uploaded
-                through your teachers themselves</span>
-            </div>
+              <span class="name" id="cold">BOOKS FOR PHARMACY STUDENTS</span>
+              <span class="lorem" id="books-intro">Click to view subjects</span>
+            </div> 
           </div>
         </label>
       </div>
@@ -308,7 +307,7 @@
   </div>
                 </div>
             </div>
-            <div class="  container-of-sections">nursing
+            <div class="  container-of-sections"><h2>NURSING BOOK SECTION</h2>
                 <div class="container-of-books">
                     <div class="inds">
     <div class="container-my">
@@ -321,8 +320,8 @@
         <label for="s15" id="slide15">
           <div class="card-my">
             <div class="infos">
-              <span class="name">Clear Your Doubts</span>
-              <span class="lorem">With the help of doubts section ,don't leave any doubt uncleared.
+              <span class="name">BOOKS FOR NURSING STUDENTS</span>
+              <span class="lorem">CLick to view subjects
               </span>
             </div>
           </div>
@@ -331,8 +330,8 @@
           <div class="card-my">
             <div class="infos">
               <span class="name">Contact With seniors</span>
-              <span class="lorem">Take a step towards betterment of your college journey with guidance of your
-                seniors</span>
+              <span class="lorem"><a href="#">View books</a>
+              </span>
             </div>
           </div>
         </label>
@@ -340,7 +339,7 @@
           <div class="card-my">
             <div class="infos">
               <span class="name">Activities</span>
-              <span class="lorem">Get notified about the co-curricular activities organised by your institute</span>
+              <span class="lorem"><a href="#">View books</a></span>
             </div>
           </div>
         </label>
@@ -348,17 +347,15 @@
           <div class="card-my">
             <div class="infos">
               <span class="name" id="pew">Curriculum</span>
-              <span class="lorem">Don't miss any lecture or event ,use a special calender based on your college
-                curriculum</span>
+              <span class="lorem"><a href="#">View books</a></span>
             </div>
           </div>
         </label>
         <label for="s55" id="slide55">
           <div class="card-my">
             <div class="infos">
-              <span class="name" id="cold">Lecture Highlight</span>
-              <span class="lorem">Missed a lecture unfortunately ? don't worry Check Highlights of lectures uploaded
-                through your teachers themselves</span>
+              <span class="name" id="cold">BOOKS FOR NURSING STUDENTS</span>
+              <span class="lorem" id="books-intro">Click to view subjects</span>
             </div>
           </div>
         </label>
