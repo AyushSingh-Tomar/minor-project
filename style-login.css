@@ -612,7 +612,7 @@ main {
 
     height: 25vh;
     width: 100%;
-    background-color: #2eb9bf;
+    background-image: linear-gradient(to top, #11101D 0%,#23203f 100%);
     align-items: center;
 }
 

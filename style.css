@@ -1307,7 +1307,7 @@ p {
 main {
 	display: flex;
 	justify-content: center;
-	background-color: #d9d9d9;
+	background-color: #E4E9F7;
 }
 
 .book {
@@ -1431,8 +1431,4 @@ p {
 .book:hover > .book-content h3,
 .book:hover > .book-content p {
 	opacity: 1;
-}
-.test {
- 
-  caret-shape:url(pen-47.svg), auto;
 }
