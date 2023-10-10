@@ -1432,3 +1432,121 @@ p {
 .book:hover > .book-content p {
 	opacity: 1;
 }
+.container-of-curriculum
+{
+  width: 65%;
+}
+
+#shift ul
+{
+  padding-left: 0rem;
+}
+#body-of-curriculum
+{
+  background-color: #E4E9F7;
+}
+
+.my-card-of-curriculum
+{
+  margin-top: 20px;
+}
+#first-card-of-curriculum
+{
+  margin-top: 100px;
+}
+.my-card-of-curriculum a
+{
+  text-decoration: none;
+  font-weight: 400;
+  color: #11101D;
+  background-color: #5bc0de;
+  border: 2px solid cyan;
+  border-radius: 8px;
+  padding: 4px;
+}
+.notice-for-new-activities,.your-clubs,.contact-coordinators
+{
+  border: 2px solid black;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.notice-for-new-activities
+{
+  position: absolute;
+  margin-top: 100px;
+  width: 60vw;
+  height: 300px;
+  margin-right: 300px;
+
+}
+
+#inside-offcanvas
+{
+  width: 100%;
+}
+
+.your-clubs
+{
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 35vh;
+  width: 80vw;
+  position: absolute;
+  margin-top: 450px;
+  border-radius: 8px;
+}
+
+.head-club h4
+{
+position: fixed;
+z-index: 1;
+background-color: #11101d;
+color: #dbd75d;
+border-radius: 6px;
+text-align: center;
+width: 80%;
+
+
+} 
+.inside-your-clubs
+{
+  margin-top: 40px;
+}
+.contact-coordinators
+{
+  width: 20vw;
+  height: 300px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin-top: 100px;
+  position: absolute;
+  margin-left: 1100px;
+  border-radius: 8px;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar:hover {
+  width: 10px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #a4a4a4;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 20%;
+  transition: all ease .3s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #333333;
+
+}
+.notice-for-new-activities
