@@ -1473,7 +1473,7 @@ p {
 {
   position: absolute;
   margin-top: 100px;
-  width: 60vw;
+  width: 55vw;
   height: 300px;
   margin-right: 300px;
 
@@ -1519,7 +1519,7 @@ width: 80%;
   overflow-y: auto;
   margin-top: 100px;
   position: absolute;
-  margin-left: 1100px;
+  margin-left: 915px;
   border-radius: 8px;
 }
 /* width */
@@ -1550,3 +1550,463 @@ width: 80%;
 
 }
 .notice-for-new-activities
+{
+  border-radius: 8px;
+}
+#demo{
+  border-radius: 8px;
+}
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "utilities";
+@import "root";
+@import "reboot";
+@import "type";
+@import "images";
+@import "containers";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "accordion";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "alert";
+@import "progress";
+@import "list-group";
+@import "close";
+@import "toasts";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+@import "spinners";
+@import "offcanvas";
+@import "helpers";
+@import "utilities/api";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
+
+.filters {
+  top: 120px;
+    float: right;
+    position: fixed;
+    width: 30%;
+    margin-left: 60%;
+    box-shadow: 0 0 6px #a4a2b2;
+    border-radius: 4%;
+        background-color: #fff;
+        background-color: rgba(255,255,255,0.5);
+  
+
+
+}
+
+.price-tags,
+.food-specification {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.menu h3 {
+    margin-top: 15px;
+    background-color: #E4E9F7;
+    width: 500px;
+    border-radius: 4px;
+    margin-left:10%;
+    line-height: 50%;
+}
+main
+{
+  width: 99.7vw;
+  height: 100vh;
+}
+.listing {
+    float: left;
+    width: 50%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 65vh;
+    box-shadow: 0 0 6px #a4a2b2;
+    border-radius: 4%;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.filters h3 {
+    margin: auto;
+    margin-right: 5%;
+}
+
+.fixed-content-of-main {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 80%;
+}
+
+.fixed-content-of-main-modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 80%;
+}
+
+@media (max-width: 869px) {
+    .fixed-content-of-main {
+        display: none;
+    }
+
+    .filters {
+        float: none;
+        position: absolute;
+        width: 100%;
+        margin-left: 5%;
+        box-shadow: 0 0 6px #a4a2b2;
+        border-radius: 4%;
+
+
+    }
+
+    .list-group-item {
+        font-size: 20px;
+    }
+
+    .fixed-content-of-main-modal {
+        display: block;
+        width: 90%;
+
+    }
+
+    .listing {
+        width: 100%;
+
+    }
+
+
+    .header header button {
+        display: block;
+        margin-top: 5px;
+        margin: auto;
+
+    }
+    .header-image {
+      display: none;
+    }
+}
+@media (max-width: 1135px) {
+    @keyframes drive {
+        from {
+            margin-left: 0%;
+        }
+    
+        to {
+            margin-left: 50%;
+    
+        }
+    }
+}
+@media (max-width: 900px) {
+    @keyframes drive {
+        from {
+            margin-left: 0%;
+        }
+    
+        to {
+            margin-left: 40%;
+    
+        }
+    }
+}
+@media (max-width: 658px) {
+ .logo_m
+ {
+   font-size: 40px;
+ }
+}
+@media (max-width: 325px) {
+ .title-of-page
+ {
+   font-size: 40px;
+ }
+}
+
+.bx-search-alt
+{
+  position: absolute;
+   font-size: 30px;
+   font-weight: 700px;
+}
+.menu{
+  margin-top: 120px;
+}
+.header-background-profile {
+
+  height: 25vh;
+  width: 100%;
+  background-image: linear-gradient(to top, #11101D 0%,#23203f 100%);
+  align-items: center;
+}
+
+.student-mentor-image {
+  margin: auto;
+  z-index: 2;
+  min-height: 100%;
+  width: 200px;
+  /* margin-top: 20px; */
+
+
+}
+img.img-responsive.img-circle {
+  position: absolute;
+  width: 200px;
+}
+
+.student-mentor-image img {
+  border: white 12px solid;
+  box-shadow: 0 0 16px #11101d;
+}
+
+.profile-details
+
+/* access through side bar */
+  {
+  width: 20px;
+
+}
+
+/* .name_job
+{
+  margin-left: 150%;
+} */
+
+.profile-details {
+  width: 80%;
+  margin: auto;
+  border: 2px solid black;
+
+}
+
+
+.tag-of-info {
+  width: 50%;
+}
+
+
+#body-of-view
+{
+  background-color: #E4E9F7;
+}
+#html-of-mentor-section,
+#body-of-mentor-section {
+    display: grid;
+    height: 100%;
+    place-items: center;
+    background: #6497ED;
+
+}
+
+.mentor-container
+{
+  margin-top: 60px;
+}
+
+.mentor-container .box-of-mentor {
+    
+    width: calc(33% - 10px);
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+}
+
+.box-of-mentor .image-of-mentor {
+
+    margin: 10px 0;
+    margin-top: 80px;
+    height: 100px;
+    width: 150px;
+    background: #6497ED;
+    padding: 3px;
+    border-radius: 50%;
+
+}
+
+.box-of-mentor .image-of-mentor img {
+
+
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+
+}
+
+.box-of-mentor .name {
+    margin: 10px 0 3px 0;
+    color: #6497ED;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: -64px;
+
+}
+
+.box-of-mentor .rating i {
+    font-size: 18px;
+    color: #6497ED;
+    margin-bottom: 5px;
+
+}
+
+.box-of-mentor .image-of-mentor {
+
+    margin: 10px 0;
+    height: 150px;
+    width: 150px;
+    background: #6497ED;
+    padding: 3px;
+    border-radius: 50%;
+
+}
+
+.box-of-mentor .image-of-mentor img {
+
+
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+
+}
+
+.mentor-container {
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    margin-left: 10%;
+    flex-wrap: wrap;
+
+}
+
+.box-of-mentor p {
+    text-align: justify;
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.btns {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.btns button {
+
+    width: 100%;
+    background: #6497ED;
+    padding: 9px 0px;
+    outline: none;
+    border: 2px solid #6497ED;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+    color: #6497ED;
+    transition: all 0.3s linear;
+}
+
+.btns button:first-child {
+    background: none;
+    margin-right: 5px;
+}
+
+.btns button:last-child {
+    color: #fff;
+    margin-left: 5px;
+}
+
+.btns button:first-child:hover {
+    background: #6497ED;
+    color: #fff;
+}
+
+@media (max-width: 1045px) {
+    .mentor-container .box-of-mentor {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 710px) {
+    .mentor-container .box-of-mentor {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 1232px) {
+    .mentor-container {
+        margin-left: 15%;
+    }
+
+}
+
+@media (max-width: 440px) {
+    .mentor-container {
+        margin-left: 20%;
+    }
+
+}
