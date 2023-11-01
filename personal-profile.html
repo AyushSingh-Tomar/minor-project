@@ -11,6 +11,13 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!-- <script> -->
+          <!-- // function transfer() {
+          // location.href = "output.html?name=" + document.getElementById("display-name").value;
+// }
+          // document.getElementById('display-name').innerHTML = name; -->
+
+        <!-- // </script> -->
 </head>
 <body>
     <header>
@@ -25,23 +32,27 @@
 
     <main style="padding: 10%;">
       <div class="profile-details container-fluid ">
+       
         <div class="well-sm user-info user-name">
          <div class="tag-of-info">Name</div>
-        <div class="response-of-user"  id="output1"></div> Ayush Singh Tomar </div>
+        <div class="response-of-user"  id="display-name">..........................</div></div>
         <div class="well-sm user-info date-of-birth">
          <div class="tag-of-info">Date of birth</div> 
-        <div class="response-of-user">26/12/2003</div></div>
+        <div class="response-of-user" id="display-date">............................</div></div>
         <div class="well-sm user-info institute">
          <div class="tag-of-info">Name of institute</div>
-        <div class="response-of-user">L.N.C.T</div> </div>
+        <div class="response-of-user" id="display-inst">..............................</div></div>
         <div class="well-sm user-info email-id">
          <div class="tag-of-info">Your email id</div>
-        <div class="response-of-user">ayushsingh@gmail.com</div> </div>
+        <div class="response-of-user" id="display-email">...............................</div></div>
         <div class="well-sm user-info contact-no">
          <div class="tag-of-info">Your Contact number</div> 
-        <div class="response-of-user">74897567818</div></div>
-        <div class="tag-of-info">Your resume</div> 
-        <div class="response-of-user"><input type="file" name="file" id="file"></div></div>
+        <div class="response-of-user" id="display-numb">.................................</div></div>
+        <div class="tag-of-info">&nbsp;Your resume</div> 
+        <div class="response-of-user"><input type="file" name="file" id="file"></div><br>
+        <div class="tag-of-info">&nbsp; Password</div> 
+        <div class="response-of-user" id="display-pass">...........................</div></div>
+        
     </div>
     <div class="sidebar">
         <div class="logo-details">
@@ -64,56 +75,56 @@
             <span class="tooltip">Home</span>
           </li>
           <li>
-            <a href="#">
+            <a href="senior.html">
               <i class='bx bx-user'></i>
               <span class="links_name">Seniors</span>
             </a>
             <span class="tooltip">Seniors</span>
           </li>
           <li>
-            <a href="#">
+            <a href="doubts.html">
               <i class='bx bx-question-mark'></i>
               <span class="links_name">Doubts</span>
             </a>
             <span class="tooltip">Doubts</span>
           </li>
           <li>
-            <a href="#">
+            <a href="curriculum.html">
               <i class='bx bx-calendar'></i>
               <span class="links_name">Curriculum</span>
             </a>
             <span class="tooltip">Curriculum</span>
           </li>
           <li>
-            <a href="#">
+            <a href="library.html">
               <i class='bx bx-library'></i>
               <span class="links_name">Library</span>
             </a>
             <span class="tooltip">Library</span>
           </li>
           <li>
-            <a href="#">
+            <a href="activities.html">
               <i class='bx bx-football'></i>
               <span class="links_name">Activities</span>
             </a>
             <span class="tooltip">Activities</span>
           </li>
           <li>
-            <a href="#">
+            <a href="mynotes.html">
               <i class='bx bx-pen'></i>
               <span class="links_name">My Notes</span>
             </a>
             <span class="tooltip">My Notes</span>
           </li>
           <li>
-            <a href="#">
+            <a href="placement.html">
               <i class='bx bx-briefcase'></i>
               <span class="links_name">Placements</span>
             </a>
             <span class="tooltip">Placements</span>
           </li>
           <li>
-            <a href="#">
+            <a href="settings.html">
               <i class='bx bx-cog'></i>
               <span class="links_name">Setting</span>
             </a>
@@ -129,7 +140,7 @@
                 <div class="job">Student</div>
               </div>
             </div>
-            <a href="personal-profile.html"><i class='bx bx-log-in' id="log_out"></i></a>
+            <a href="personal-profile.html" target="_self"><i class='bx bx-log-in' id="log_out"></i></a>
           </li>
         </ul>
       </div>
@@ -152,6 +163,20 @@
       </script>
 
     </main>
-    
+    <script>
+      const Name = localStorage.getItem('First-name')
+      const DateOb = localStorage.getItem('First-date')
+      const Pass = localStorage.getItem('First-pass')
+      const Inst = localStorage.getItem('First-inst')
+      const Email = localStorage.getItem('First-email')
+      const myNumb = localStorage.getItem('First-numb')
+
+      document.getElementById('display-name').textContent = Name;
+      document.getElementById('display-date').textContent = DateOb;
+      document.getElementById('display-email').textContent = Email;
+      document.getElementById('display-pass').textContent = Pass;
+      document.getElementById('display-inst').textContent = Inst;
+      document.getElementById('display-numb').textContent = myNumb;
+    </script>
 </body>
 </html>

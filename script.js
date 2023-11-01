@@ -1,30 +1,30 @@
-function showModal()
-{
-    document.querySelector('.overlay-modal').classList.add('show-overlay-modal');
-    document.querySelector('.login-form-home').classList.add('show-login-form');
 
-}
-function closeModal()
-{
-    document.querySelector('.overlay-modal').classList.remove('show-overlay-modal');
-    document.querySelector('.login-form-home').classList.remove('show-login-form');
 
-}
 
-const txt1 = document.getElementById('username');
-const btnLogin = document.getElementById('btnLogin');
-const out1 = document.getElementById('output1');
-const txt2 = document.getElementById('designation');
-const out2 = document.getElementById('output2');
 
-function fun1()
-{
-    out1.innerHTML = txt1.value;
-    out2.innerHTML = txt2.value;
-}
 
-btnLogin.addEventListener('click', fun1);
+// document.addEventListener('DOMContentLoaded', function () {
+//     const form = document.getElementById('myForm');
 
-function transfer() {
-    location.href = "output.html?name="+document.getElementById("output1").value;
-}
+//     form.addEventListener('submit', function (event) {
+//         event.preventDefault(); // Prevent the default form submission
+
+//         const name = document.getElementById('name').value;
+//         const email = document.getElementById('email').value;
+//         const gender = document.querySelector('input[name="gender"]:checked').value;
+//         const interests = Array.from(document.querySelectorAll('input[name="Password"]:checked')).map(el => el.value);
+
+//         localStorage.setItem('first-name',name)
+
+//         // document.getElementById('display-name').textContent = name;
+//         // document.getElementById( 'display-email').textContent = email;
+//         // document.getElementById( 'display-gender').textContent = gender;
+//         // document.getElementBy1d( 'display-Password').textContent = interests.join(', ');
+           
+        
+        
+       
+       
+//     });
+// });
+

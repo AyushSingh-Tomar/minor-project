@@ -3,11 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <title>Document</title>
 </head>
-    <main>
+
+
+    <main >
+      <div class="button-for-tags" style="float: left; margin-right:70px ; background-image: linear-gradient(to top, #11101D 0%,#23203f 100%);">
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+          Note-Tags
+         </button >
+      </div>
         <div class="book">
             <div class="book-cover">
                 <div>
@@ -26,7 +35,7 @@
           <div class="logo_name">Collegeholic</div>
           <i class='bx bx-menu' id="btn"></i>
         </div>
-        <ul class="nav-list">
+        <ul class="nav-list" id="shift" style="padding-left: 0%;">
           <li>
             <i class='bx bx-search'></i>
             <input type="text" placeholder="Search...">
@@ -34,28 +43,28 @@
           </li>
     
           <li>
-            <a href="#">
+            <a href="index.html">
               <i class='bx bx-home'></i>
               <span class="links_name">Home</span>
             </a>
             <span class="tooltip">Home</span>
           </li>
           <li>
-            <a href="#">
+            <a href="senior.html">
               <i class='bx bx-user'></i>
               <span class="links_name">Seniors</span>
             </a>
             <span class="tooltip">Seniors</span>
           </li>
           <li>
-            <a href="#">
+            <a href="doubts.html">
               <i class='bx bx-question-mark'></i>
               <span class="links_name">Doubts</span>
             </a>
             <span class="tooltip">Doubts</span>
           </li>
           <li>
-            <a href="#">
+            <a href="curriculum.html">
               <i class='bx bx-calendar'></i>
               <span class="links_name">Curriculum</span>
             </a>
@@ -69,28 +78,28 @@
             <span class="tooltip">Library</span>
           </li>
           <li>
-            <a href="#">
+            <a href="activities.html">
               <i class='bx bx-football'></i>
               <span class="links_name">Activities</span>
             </a>
             <span class="tooltip">Activities</span>
           </li>
           <li>
-            <a href="mynotes.html">
+            <a href="mynotes.html" target="_self">
               <i class='bx bx-pen'></i>
               <span class="links_name">My Notes</span>
             </a>
             <span class="tooltip">My Notes</span>
           </li>
           <li>
-            <a href="#">
+            <a href="placement.html">
               <i class='bx bx-briefcase'></i>
               <span class="links_name">Placements</span>
             </a>
             <span class="tooltip">Placements</span>
           </li>
           <li>
-            <a href="#">
+            <a href="settings.html">
               <i class='bx bx-cog'></i>
               <span class="links_name">Setting</span>
             </a>
@@ -121,6 +130,21 @@
           sidebar.classList.toggle("open");
         });
       </script>
+  
+<div class="offcanvas offcanvas-end" id="demo">
+  <div class="offcanvas-header">
+    <h1 class="offcanvas-title">Tags</h1>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>1)<input type="text" name="tag" id="tag1"placeholder="Chapter1 -imp"></p>
+    <p>2)<input type="text" name="tag" id="tag2"placeholder=" consult "></p>
+   
+  </div>
+</div>
+
+
+
 </body>
 </html>
 
